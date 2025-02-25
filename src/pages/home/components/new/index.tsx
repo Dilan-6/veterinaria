@@ -166,7 +166,7 @@ const NewComponent = () => {
                 priority
             />
             <Image
-                src="/svg/new/vector3.svg"
+                src="/svg/new/Vector3.svg"
                 alt=""
                 className="new-image-three-vector"
                 width={219}
@@ -174,7 +174,7 @@ const NewComponent = () => {
                 priority
             />
             <Image
-                src="/svg/new/vector3.svg"
+                src="/svg/new/Vector3.svg"
                 alt=""
                 className="new-image-three-vector-two"
                 width={199}
@@ -182,7 +182,7 @@ const NewComponent = () => {
                 priority
             />
             <Image
-                src="/svg/new/vector3.svg"
+                src="/svg/new/Vector3.svg"
                 alt=""
                 className="new-image-three-vector-three"
                 width={179}
@@ -190,7 +190,7 @@ const NewComponent = () => {
                 priority
             />
             <Image
-                src="/svg/new/vector4.svg"
+                src="/svg/new/Vector4.svg"
                 alt=""
                 className="new-image-three-4-one"
                 width={379}
@@ -198,7 +198,7 @@ const NewComponent = () => {
                 priority
             />
             <Image
-                src="/svg/new/vector4.svg"
+                src="/svg/new/Vector4.svg"
                 alt=""
                 className="new-image-three-4-one-1"
                 width={405}
@@ -206,7 +206,7 @@ const NewComponent = () => {
                 priority
             />
             <Image
-                src="/svg/new/vector4.svg"
+                src="/svg/new/Vector4.svg"
                 alt=""
                 className="new-image-three-4-one-2"
                 width={431}
@@ -214,7 +214,7 @@ const NewComponent = () => {
                 priority
             />
             <Image
-                src="/svg/new/vector4.svg"
+                src="/svg/new/Vector4.svg"
                 alt=""
                 className="new-image-three-4-one-3"
                 width={458}
@@ -222,7 +222,7 @@ const NewComponent = () => {
                 priority
             />
             <Image
-                src="/svg/new/vector4.svg"
+                src="/svg/new/Vector4.svg"
                 alt=""
                 className="new-image-three-4-one-4"
                 width={484}

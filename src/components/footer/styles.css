@@ -125,8 +125,8 @@
 .footer::before {
     content: "";
     position: absolute;
-    top: -20;
     left: 0;
+    top: 0;
     width: 200%;
     height: 60px;
     background: rgb(192, 80, 80);
