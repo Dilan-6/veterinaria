@@ -1,0 +1,239 @@
+.categories-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8% 0;
+    opacity: 0;
+}
+
+.categories-container.active-animation {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.categories-padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.categories-text-title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #0D0D0D;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    border-right: none;
+}
+
+.categories-container.active-animation .categories-text-title {
+    animation: typingLoop 6s steps(30, end) infinite,
+        blinkLoop 0.7s step-end infinite,
+        fadeIn 1s ease 0.3s forwards;
+}
+
+.div-padre-categories {
+    display: flex;
+    gap: 2rem;
+    opacity: 0;
+}
+
+.categories-container.active-animation .div-padre-categories {
+    animation: fadeIn 1s ease 0.6s forwards;
+}
+
+.categorie-one-div,
+.categorie-two-div,
+.categorie-three-div,
+.categorie-four-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    opacity: 0;
+}
+
+.categories-container.active-animation .categorie-one-div {
+    animation: fadeInUp 1s ease 0.9s forwards;
+}
+
+.categories-container.active-animation .categorie-two-div {
+    animation: fadeInUp 1s ease 1.1s forwards;
+}
+
+.categories-container.active-animation .categorie-three-div {
+    animation: fadeInUp 1s ease 1.3s forwards;
+}
+
+.categories-container.active-animation .categorie-four-div {
+    animation: fadeInUp 1s ease 1.5s forwards;
+}
+
+.categorie-one-div:hover,
+.categorie-two-div:hover,
+.categorie-three-div:hover,
+.categorie-four-div:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.categorie-one-div:hover~.categorie-two-div,
+.categorie-one-div:hover~.categorie-three-div,
+.categorie-one-div:hover~.categorie-four-div,
+.categorie-two-div:hover~.categorie-one-div,
+.categorie-two-div:hover~.categorie-three-div,
+.categorie-two-div:hover~.categorie-four-div,
+.categorie-three-div:hover~.categorie-one-div,
+.categorie-three-div:hover~.categorie-two-div,
+.categorie-three-div:hover~.categorie-four-div,
+.categorie-four-div:hover~.categorie-one-div,
+.categorie-four-div:hover~.categorie-two-div,
+.categorie-four-div:hover~.categorie-three-div {
+    filter: blur(6px);
+}
+
+.contenedor-categories-padre-one,
+.contenedor-categories-padre-two,
+.contenedor-categories-padre-three,
+.contenedor-categories-padre-four {
+    transition: transform 0.3s ease;
+    opacity: 0;
+}
+
+.categories-container.active-animation .contenedor-categories-padre-one {
+    animation: zoomIn 1s ease 1.2s forwards;
+}
+
+.categories-container.active-animation .contenedor-categories-padre-two {
+    animation: zoomIn 1s ease 1.4s forwards;
+}
+
+.categories-container.active-animation .contenedor-categories-padre-three {
+    animation: zoomIn 1s ease 1.6s forwards;
+}
+
+.categories-container.active-animation .contenedor-categories-padre-four {
+    animation: zoomIn 1s ease 1.8s forwards;
+}
+
+.contenedor-categories-padre-one {
+    background: #F3ECFC;
+    padding: 92.5px 40px;
+}
+
+.contenedor-categories-padre-two {
+    background: #F6F6F6;
+    padding: 76px 91.5px;
+}
+
+.contenedor-categories-padre-three {
+    background: #F0FDEC;
+    padding: 58px;
+}
+
+.contenedor-categories-padre-four {
+    background: #FFF0ED;
+    padding: 57px;
+}
+
+
+.categories-text-descri {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    color: #0D0D0D;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    animation: none;
+    text-align: center;
+    border-right: none;
+}
+
+.categorie-one-div:hover .categories-text-descri,
+.categorie-two-div:hover .categories-text-descri,
+.categorie-three-div:hover .categories-text-descri,
+.categorie-four-div:hover .categories-text-descri {
+    animation: typingHover 2s steps(20, end) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typingLoop {
+
+    0%,
+    10% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes typingHover {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes blinkLoop {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

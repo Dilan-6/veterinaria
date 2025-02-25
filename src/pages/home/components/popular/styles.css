@@ -1,0 +1,127 @@
+.popular {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.popular-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    gap: 2rem;
+}
+
+.popular-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.title-popular {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56.25px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(13, 13, 13, 1);
+}
+
+.popular-cards-one,
+.popular-cards-two,
+.popular-cards-three,
+.popular-cards-four {
+    border: 1px solid rgba(246, 61, 61, 1);
+    padding: 0px 61px;
+}
+
+.popular-cards-one:hover,
+.popular-cards-two:hover,
+.popular-cards-three:hover,
+.popular-cards-four:hover {
+    box-shadow: 0px 0px 20px 0px rgba(246, 61, 61, 0.7);
+}
+@keyframes slideUpBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    80% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes cascadeLoop {
+    0%, 10% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    20%, 60% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    80%, 100% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+
+.popular-cards-one,
+.popular-cards-two,
+.popular-cards-three,
+.popular-cards-four {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    animation: cascadeLoop 9s ease-in-out infinite;
+}
+
+.popular-cards-one {
+    animation-delay: 0.2s;
+}
+
+.popular-cards-two {
+    animation-delay: 0.4s;
+}
+
+.popular-cards-three {
+    animation-delay: 0.6s;
+}
+
+.popular-cards-four {
+    animation-delay: 0.8s;
+}
+
+.popular-cards-one:hover,
+.popular-cards-two:hover,
+.popular-cards-three:hover,
+.popular-cards-four:hover {
+    box-shadow: 0px 0px 25px 0px rgba(246, 61, 61, 0.7);
+    transform: scale(1.1) rotate(3deg);
+}

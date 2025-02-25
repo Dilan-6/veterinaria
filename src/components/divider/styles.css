@@ -1,0 +1,19 @@
+.component-container-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+    .divider {
+      background: rgba(229, 229, 229, 1);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .divider {
+      width: 100% !important;
+      height: 1px;
+    }
+    
+  }
+  
+  

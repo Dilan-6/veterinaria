@@ -1,0 +1,118 @@
+.contenedor-navbar {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin-top: 2%;
+    gap: 10rem;
+}
+
+.contenedor-nav-two {
+    color: rgba(13, 13, 13, 1);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18.29px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.contenedor-nav-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.contenedor-nav-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 2.5rem;
+}
+
+.contenedor-nav-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    justify-items: center;
+}
+
+.navbar {
+    animation: slideDown 1s ease forwards;
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.link {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(246, 61, 61, 1);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.link:hover {
+    color: rgba(246, 61, 61, 1);
+    transform: translateY(-3px);
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.contenedor-nav-three img {
+    transition: transform 0.3s ease;
+}
+
+.contenedor-nav-three img:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+.contenedor-nav-three img:hover {
+    animation: bounce 0.6s ease infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}

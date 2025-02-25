@@ -1,0 +1,195 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeInUpLoop {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeOutDownLoop {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fade-out {
+    animation: fadeOut 1s ease-in-out forwards;
+}
+
+.image-taste {
+    position: absolute;
+    z-index: 2;
+    padding-bottom: 96px;
+    left: 0px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.image-taste-two {
+    position: absolute;
+    padding-bottom: 360px;
+    left: 120px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.image-taste-one {
+    position: absolute;
+    z-index: 1;
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+
+.taste-tex-container {
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 40%;
+    margin-left: 720px;
+    gap: 2rem;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+.container-taste-butoon {
+    background-color: rgba(246, 61, 61, 1);
+    box-shadow: 0px 0px 20px 0px rgba(246, 61, 61, 0.7);
+    border-radius: 26px;
+    color: rgba(255, 255, 255, 1);
+    width: 40%;
+    display: flex;
+    border: 2px solid rgba(246, 61, 61, 1);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    animation: fadeIn 3.5s ease-in-out forwards;
+    transition: transform 0.3s ease-in-out;
+}
+
+.taste-button {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    padding: 8px 25px;
+}
+
+.container-taste-butoon:hover {
+    border: 2px solid rgba(246, 61, 61, 1);
+    background: rgba(246, 61, 61, 0);
+    box-shadow: 0px 0px 20px 0px rgba(246, 61, 61, 0.7);
+    color: rgba(13, 13, 13, 1);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.taste {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20%;
+    color: rgba(13, 13, 13, 1);
+}
+
+.taste-imagen-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+}
+
+.container-text-small-taste {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+}
+
+.small-taste {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-title-small-taste {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-align: center;
+    width: 30%;
+    animation: fadeInUpLoop 4s ease-in-out infinite;
+}
+
+.text-descrip-small-taste {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: center;
+    animation: fadeInUpLoop 4s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.pet-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30.96px;
+    animation: fadeInUpLoop 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.pet-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.64px;
+    width: 70%;
+    animation: fadeInUpLoop 4s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
