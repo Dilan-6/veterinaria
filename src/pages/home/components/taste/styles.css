@@ -67,7 +67,7 @@
 .image-taste {
     position: absolute;
     z-index: 2;
-    padding-bottom: 140px;
+    padding-bottom: 96px;
     left: 0px;
     animation: fadeIn 1.5s ease-in-out forwards;
 }
