@@ -1,14 +1,18 @@
-import { Poppins } from "next/font/google";
 import "./globals.css";
+import { Poppins } from 'next/font/google';
 
-
-
-export const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "800"],
-  display: "swap",
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '700', '800'],
+  display: 'swap',
 });
 
+
+
+export const metadata = {
+  title: 'Veterinaria',
+  description: 'Tu descripción',
+};
 
 export default function RootLayout({
   children,
@@ -16,9 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={poppins.className} >
-      <head></head>
-      <body>{children}</body>
+    <html lang="es">
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }
